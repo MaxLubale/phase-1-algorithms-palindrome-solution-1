@@ -1,5 +1,16 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  word = word.toLowerCase();
+   
+  // Reverse the word
+  let reversedWord = word.split('').reverse().join('');
+ 
+  // Check if the reversed word is equal to the original word
+  if (word === reversedWord) {
+     return true;
+  } else {
+     return false;
+  }
 }
 
 /* 
